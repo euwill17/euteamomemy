@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste de Amor</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #8B0000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      background-color: #ec1919;
+      color: red;
+    }
+
+    .container {
+      margin-top: 100px;
+    }
+
+    button {
+      font-size: 1.2em;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: white;
+      color: rgb(89, 3, 3);
+      font-weight: bold;
+    }
+
+    .resposta {
+      display: none;
+      font-size: 2em;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: rgb(158, 24, 24);
+      color: rgb(251, 246, 246);
+      white-space: pre-line;
+    }
+
+    #resposta2 {
+      margin-top: 50px; /* mais pra baixo */
+      font-size: 1.8em;
+      background-color: rgb(120, 10, 10);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Início</a>
+    <a href="PRINCESA.html">Página 2</a>
+    <a href="pagina2.html">Página 3</a>
+    <a href="botao.html">Página 4</a>
+  </div>
+
+  <div class="container">
+    <button onclick="mostrarAmor()">Clique aqui se me ama🤨🤨</button>
+    
+    <div id="resposta1" class="resposta">💕💕Nunca duvidei💕💕</div>
+    
+    <div id="resposta2" class="resposta">
+      É isso minha gatinha, foi algo bem simples,  
+      mas tem todo meu coração aqui.  
+      Eu te amo. Feliz dia dos namorados.  
+      O nosso primeiro de muitos juntos.
+    </div>
+  </div>
+
+  <script>
+    function mostrarAmor() {
+      document.getElementById("resposta1").style.display = "block";
+      document.getElementById("resposta2").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
